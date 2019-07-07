@@ -74,9 +74,9 @@
       "id": 11,
       "slug": "react-ninja",
       "title": "React Ninja",
-      "authorId": 1,
-      "category": "JavaScript",
-      "createdAt": 1562529507919
+      "authorId": 2,
+      "category": "React",
+      "createdAt": 1562531858952
     }
   ],
   "authors": [
