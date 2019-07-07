@@ -22,6 +22,17 @@ class CoursesPage extends React.Component {
               <th>Category</th>
             </tr>
           </thead>
+          <tbody>
+            {this.state.courses.map(course => {
+              return (
+                <tr key={course.id}>
+                  <td>{course.title}</td>
+                  <td>{course.authorId}</td>
+                  <td>{course.category}</td>
+                </tr>
+              );
+            })}
+          </tbody>
         </table>
       </>
     );
