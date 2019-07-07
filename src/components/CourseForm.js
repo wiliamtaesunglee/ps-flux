@@ -3,15 +3,16 @@ import React from "react";
 function CourseForm(props) {
   return (
     <form>
-      <div classNamev="form-group">
+      <div className="form-group">
         <label htmlFor="title">Title</label>
-        <div classname="field">
+        <div className="field">
           <input
             id="title"
             type="text"
+            onChange={props.onChange}
             name="title"
             className="form-control"
-            value=""
+            value={props.course.title}
           />
         </div>
       </div>
@@ -23,12 +24,12 @@ function CourseForm(props) {
             id="author"
             name="authorId"
             onChange={props.onChange}
-            value=""
+            value={props.course.authotId || ""}
             className="form-control"
           >
-            <oprion value="" />
-            <oprion value="1">Cory House</oprion>
-            <oprion value="2">Scott Allen</oprion>
+            <option value="" />
+            <option value="1">Cory House</option>
+            <option value="2">Scott Allen</option>
           </select>
         </div>
       </div>
@@ -40,8 +41,9 @@ function CourseForm(props) {
             type="text"
             id="category"
             name="category"
+            onChange={props.onChange}
             className="form-control"
-            value=""
+            value={props.course.category}
           />
         </div>
       </div>
